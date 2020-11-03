@@ -1,0 +1,483 @@
+@font-face {
+  font-family: Addington;
+  src: url(/asset/fonts/SVN-Addington\ CF\ Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+.wrap {
+  height: 2856px;
+  width: 1920px;
+  position: relative;
+  background: url(/asset/home.png) no-repeat center top;
+  overflow: hidden;
+  background-color: #eef2fb;
+}
+
+.head {
+  position: relative;
+  height: 61px;
+  width: 100%;
+  padding: 420;
+
+  .logo {
+    background: url(/asset/logo.png) top center no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 100px;
+    z-index: 999;
+    cursor: pointer;
+  }
+  .top_nav {
+    position: absolute;
+    left: 426px;
+    ul {
+      list-style: none;
+      margin-right: 100px;
+      float: left;
+      li {
+        text-align: center;
+        line-height: 61px;
+        a {
+          display: block;
+          color: #ffffff;
+          font-family: "Addington", sans-serif;
+          font-size: 16.29px;
+          line-height: 61px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .logo_right_nav {
+      margin-left: 250px;
+    }
+  }
+}
+
+#section_1 {
+  position: relative;
+  height: 945px;
+  width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  .lunbo_box {
+    position: absolute;
+    top: 497px;
+    left: 300px;
+    width: 839px;
+    height: 389px;
+    overflow: hidden;
+    .slide_img {
+      width: 100%;
+      height: 100%;
+
+      .lb_cont {
+        display: none;
+      }
+    }
+    .slide_btn {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background: #ffffff;
+      cursor: pointer;
+      #slide_btn_left,
+      #slide_btn_right {
+        display: none;
+      }
+
+      td {
+        border-left: 1px solid rgb(215, 213, 213);
+        padding: 0 34px;
+        a {
+          color: #000000;
+          display: block;
+          font-family: "Addington", sans-serif;
+          text-align: center;
+          line-height: 50px;
+          text-decoration: none;
+        }
+        &.curr,
+        &:hover {
+          background: url(/asset/curr_nav.png);
+          a {
+            color: #ffffff;
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+
+  .download_btn {
+    position: absolute;
+    top: 497px;
+    left: 1160px;
+    width: 331px;
+    height: 184px;
+  }
+
+  .charger_btn {
+    position: absolute;
+    top: 497px;
+    left: 1504px;
+    width: 137px;
+    height: 90px;
+  }
+
+  .regist_btn {
+    position: absolute;
+    top: 591px;
+    left: 1504px;
+    width: 137px;
+    height: 90px;
+  }
+  .congdong {
+    position: absolute;
+    top: 690px;
+    left: 1161px;
+    width: 479px;
+    height: 197px;
+  }
+}
+
+#section_2 {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+  height: 470px;
+  .hot {
+    position: absolute;
+    top: 83px;
+    left: 278px;
+    width: 870px;
+    height: 350px;
+    .hot_post {
+      position: relative;
+      width: 279px;
+      height: 100%;
+      border: 1px solid rgb(191, 195, 201);
+      float: left;
+      margin: 0 4.5px;
+      .post_img {
+        width: 100%;
+      }
+      .post_detail {
+        position: relative;
+        height: 73px;
+        .title {
+          padding: 0 17px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          a {
+            text-align: center;
+            line-height: 35px;
+            color: #000000;
+            text-decoration: none;
+            font-family: "Addington", sans-serif;
+          }
+        }
+        .time {
+          float: left;
+          padding-left: 22px;
+          color: rgb(25, 98, 166);
+          font-family: "Addington", sans-serif;
+          font-weight: 600;
+        }
+        .ongoing {
+          position: absolute;
+          top: 39px;
+          left: 151px;
+        }
+      }
+    }
+  }
+  .event_news {
+    position: absolute;
+    top: 83px;
+    left: 1160px;
+    width: px;
+    height: 350px;
+    .nav-tabs {
+      border-bottom: none;
+      a {
+        background: rgb(227, 229, 232);
+        width: 118px;
+        margin-left: 5px;
+        color: #000000;
+        font-family: "Addington", sans-serif;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        &:hover,
+        &.active {
+          background: url(/asset/curr_nav.png) center top no-repeat;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .hot_event {
+    text-align: center;
+    margin: 10px 0;
+    a {
+      color: #004240;
+      font-family: "Addington", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      overflow: hidden;
+      ul {
+        list-style: none;
+        li {
+          height: 42px;
+          border-top: 1px solid rgb(196, 192, 195);
+          line-height: 42px;
+          font-family: "Addington", sans-serif;
+          font-weight: 300;
+          color: #000000;
+          cursor: pointer;
+          .left_new {
+            padding-left: 5px;
+            width: 400px;
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .right_new {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+#section_3 {
+  position: relative;
+  margin: 0 auto;
+  width: 1920px;
+  height: 400px;
+  overflow: hidden;
+  .nav-tabs {
+    position: absolute;
+    top: 80px;
+    left: 710px;
+    width: 500px;
+    border-bottom: none;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: #dee2e6;
+    }
+    a {
+      position: relative;
+      width: 80px;
+      margin: 0 22.5px;
+      color: #000000;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+      &.active:before,
+      &:hover::before {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 3px;
+        width: 80px;
+        background: #669999;
+        background: linear-gradient(rgb(0, 178, 155), rgb(0, 111, 103));
+      }
+    }
+  }
+
+  .tab-content {
+    position: absolute;
+    top: 150px;
+    left: 278px;
+    height: 219px;
+    width: 1365px;
+    .tab-pane {
+      width: 100%;
+      height: 100%;
+      .media_block {
+        position: relative;
+        float: left;
+        margin: 0 5px;
+        width: 263px;
+        height: 219px;
+        background: url(/asset/media-bgr.png) top center no-repeat;
+        img {
+          width: 263px;
+          height: 146px;
+        }
+        .media_detail {
+          padding: 10px;
+          vertical-align: middle;
+          font-family: "Addington", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+#section_4 {
+  position: relative;
+  height: 850px;
+  width: 1920px;
+  .role_right {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    width: 750px;
+    height: 770px;
+    float: left;
+    overflow: visible;
+  }
+  .role_left {
+    position: relative;
+    top: 80px;
+    left: 1050px;
+    width: 850px;
+    height: 770px;
+    z-index: 1;
+    .role_detail {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: visible;
+      margin-bottom: 20px;
+      .role_name {
+        background: url("/asset/rolename.png") center top no-repeat;
+        position: relative;
+        width: 250px;
+        height: 46px;
+        text-align: center;
+        font-family: "Addington";
+        font-size: 24px;
+        line-height: 46px;
+        color: #ffffff;
+      }
+      .role_desc {
+        position: relative;
+        top: 50px;
+        left: 0px;
+        width: 380px;
+        margin-bottom: 20px;
+        p {
+          font-family: "Addington", sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      .role_info {
+        position: absolute;
+        top: 60px;
+        left: 400px;
+      }
+    }
+    .role_btn {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: visible;
+      table {
+        transform: rotate(-45deg);
+        border-collapse: separate;
+        border-spacing: 4px;
+        td {
+          cursor: pointer;
+          inner {
+            display: block;
+            transform: rotate(45deg);
+            margin: auto;
+            text-align: center;
+
+            &.hide {
+              display: none;
+            }
+          }
+        }
+      }
+      .ignore {
+        opacity: 0;
+      }
+      .child {
+        opacity: 0;
+        width: 85px;
+        height: 85px;
+        border: 2px solid #00a591;
+        &.active {
+          opacity: 1;
+        }
+      }
+
+      .main {
+        width: 85px;
+        height: 85px;
+        border: 2px solid #00a591;
+        background: #00a591;
+      }
+    }
+  }
+}
+.foot {
+  position: relative;
+  height: 140px;
+  background: rgb(0, 32, 35);
+  .foot-logo {
+    position: absolute;
+    top: 20px;
+    left: 311px;
+    width: 250px;
+    height: 100px;
+    float: left;
+  }
+  .foot-info {
+    position: absolute;
+    top: 20px;
+    margin-left: 606px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
